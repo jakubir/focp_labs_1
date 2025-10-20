@@ -78,7 +78,7 @@ int main()
 		cout << hex << i << " " << dec << i << " " << (char)i << endl;
 	}
 
-	//3. Evaluate the following expressions (and similar) “on paper”. Then check your results (write the code).
+	//3. Evaluate the following expressions (and similar) â€œon paperâ€. Then check your results (write the code).
 	//
 	//2+2.7
 	//4/7
@@ -221,6 +221,35 @@ int main()
 		cout << endl;
 	}
 
+	//with printf
+	/*
+		int i, j, k = 1;
+
+		printf("%4s|", ""); 
+	
+		for (i = 1; i <= 16; i++)
+			printf("%4x", i); 
+	
+		printf("\n");
+	
+		for (i = 1; i <= 16 * 4 + 5; i++)
+			printf("-"); 
+	
+		printf("\n");
+	
+		for (i = 1; i <= 16; i++)
+		{
+			printf("%4x|", k); 
+			k++;
+			for (j = 1; j <= 16;j++)
+			{
+			printf("%4x", j*i);
+			}
+	
+			printf("\n");
+		}
+	*/
+
 	//7. Write a program computing the square root of 1000 and print the result
 	//on the screen.
 	//Do NOT use the _sqrt_ function, but use an ITERATIVE
@@ -238,3 +267,4 @@ int main()
 
 	return 0;
 }
+
