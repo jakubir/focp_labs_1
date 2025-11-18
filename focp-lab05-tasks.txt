@@ -1,0 +1,28 @@
+POINTERS
+Define an array of 100 doubles and fill it with numbers using a pointer.
+
+FUNCTIONS
+1) For each of the functions (exampleFunctions.cpp):
+- call the function for different values and/or variables (if applicable),
+- display value returned by the function (if applicable),
+- assign value returned by the function to some variable (if applicable).
+
+2) Write a function taking two integers as parameters and returning the maximum of these numbers.
+
+3) Write a function taking three doubles as parameters and returning 1 if they are equal, 0 otherwise.
+
+4) Write a function taking an integer as parameter and increasing its value by 100.
+
+5) Write a function my_swap, which exchanges values in two float variables.
+
+6) Write a function minOfArr, which finds minimum value in an array of integers. 
+
+7) Write a function accepting a text string (a pointer to char) and counting words in this text.
+
+8) Write a recursive function fibonacci, which returns n-th Fibonacci number (n should be taken as a parameter). A recursive function contains a call to itself. Fibonacci sequence: F_0 = 1; F_1 = 1; F_n = F_(n-1) + F_(n-2)
+
+9) Write a function concatenating two strings (like strcat).
+Declaration:
+char * my_strcat(char *dest, const char *src) 
+This C library function strcat  appends the string pointed to by src to the end of the string pointed to by dest.
+
