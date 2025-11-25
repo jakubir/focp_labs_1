@@ -23,7 +23,7 @@ Your answers:
 
 1.
 
-002FFB40 6
+002FFB08 6
 
 
 2. 
