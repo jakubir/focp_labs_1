@@ -1,0 +1,33 @@
+ GROUP A
+
+----
+1. (0.5) The output of the following code:
+
+int x[3] = {0, 1, 2};
+printf("%p %d\n", x, x[0]); 
+
+is:
+
+002FFB00 0
+ 
+What will be the output of the following code (placed immediately after the previous code), assuming that an int occupies 4 bytes of memory?
+
+int * p = &x[2];
+*p = *p + 4;
+printf(“%p %d\n”, p, *p);
+
+2. (0.5) Write a function named isEven that takes an integer parameter and returns true if the integer is even.
+---------
+
+Your answers:
+
+1.
+
+002FFB40 6
+
+
+2. 
+bool isEven(int a)
+{
+	return a % 2 ? false : true;
+}

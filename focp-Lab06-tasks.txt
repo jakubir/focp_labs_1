@@ -1,0 +1,20 @@
+Write a C program containing:
+
+1. Structures describing (in a 2-D space):
+ - point,
+ - square (two points),
+ - circle (point and radius).
+
+2. Functions returning:
+ - distance between two points (function parameters: two points),
+ - middle point between two points (function parameters: two points),
+ - area of a square (function parameter: a square),
+ - square with the biggest area (function parameters: two squares),
+ - area of a circle (function parameter: a circle).
+
+The program should:
+a) Create:
+- an array of N = 1000 (N - defined/constant) points (random values of coordinates), 
+- an array of M = 500 squares (coordinates taken from array of pointers),
+- an array of P = 100 circles (centre points from taken from array of pointers, radiuses random),
+b) Call all functions (from point 2) for random points/squares/circles from the arrays.
