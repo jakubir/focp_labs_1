@@ -1,0 +1,32 @@
+GROUP A
+
+TASKS
+----------
+1. Define a structure Book that represents a book. 
+It should contain the following fields: 
+- title (maximum 100 characters array), 
+- author (maximum 50 characters array), 
+- number of pages (integer number), 
+- rating (floating-point number).
+
+2. Write a definition of a function compareBooks that takes two Book structures as parameters and returns a bool: true if the rating of the first book is higher than the rating of the second book, and false otherwise.
+----------
+
+
+Your answers HERE:
+
+1.
+
+struct Book {
+	char title[100];
+	char author[50];
+	int number_of_pages;
+	float rating;
+}
+
+2. 
+
+bool compareBooks(Book b1, Book b2)
+{
+	return b1.rating > b2.rating ? true : false;
+}

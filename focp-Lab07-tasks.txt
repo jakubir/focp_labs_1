@@ -1,0 +1,24 @@
+Task 1.	
+Display all command-line arguments of the program. Run the program with different arguments from the command line.
+
+Task 2.	
+Open (create) a text file named "numbers.txt". Write 10,000 random integers in the range [0, 1000] to the file. Then close the file.
+
+Task 3.	
+The program should be run with three file names as command-line arguments, for example: numbers.txt result.txt result.bin 
+
+Open an existing text file with numbers (its name is the first command-line argument) and:
+	a) print all numbers to the screen,
+	b) calculate mean and minimum of all read numbers,
+	c) store the calculated values (mean and minimum) in two ways:
+	   - as a text in a new file (its name: second command-line argument),
+	   - as a memory block in a new file (its name: third command-line argument), 	d) calculate and display the sizes of files created in c), hint: use ftell,
+	e) close all files.
+
+
+Task 4. 
+Write a definition of a function copyFile that creates an exact copy of a source file. The names of the source and destination files are function parameters. The function should return true if the operation was successful, and false otherwise. Example function prototype:
+
+bool copyFile(const char * source, const char * dest);
+
+Call this function for some existing file (e.g. a JPG image) with the name of the destination file different, but with the same extension. Check the copied file e.g. by opening it in a browser.
