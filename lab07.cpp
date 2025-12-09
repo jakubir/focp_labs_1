@@ -10,11 +10,12 @@
 //bool copyFile(const char* source, const char* dest);
 
 //Call this function for some existing file(e.g.a JPG image) with the name of the destination file different, but with the same extension.Check the copied file e.g.by opening it in a browser.
+#define BUFFER_SIZE 1024
 
 bool copyFile(const char* source, const char* dest)
 {
-	size_t data;
-
+	size_t count;
+	char buffer[BUFFER_SIZE];
 
 	FILE* src_file = fopen(source, "rb");
 
@@ -34,10 +35,11 @@ bool copyFile(const char* source, const char* dest)
 		return 0;
 	}
 
-	while ((data = ))
+	while ((count = fread(buffer, 1, BUFFER_SIZE, src_file)) > 0)
+		fwrite(buffer, 1, count, out_file);
 
 	fclose(src_file);
-	fclose(src_file);
+	fclose(out_file);
 
 	return 1;
 }
@@ -145,4 +147,5 @@ int main(int argc, char* argv[])
 	fclose(file);
 
 	return 0;
+
 }
