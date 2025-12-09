@@ -1,0 +1,24 @@
+//GROUP A
+
+//Open the text file "secret.txt". 
+// If the file opens successfully, 
+// write the name of your favourite colour to the file, 
+// and then close it. 
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+
+
+
+
+
+
+
+	return 0;
+}
+
+ 
+
+
+

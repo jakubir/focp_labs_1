@@ -1,0 +1,27 @@
+//GROUP B
+
+//Open the text file "best.txt".
+// If the file opens successfully, 
+// write your favourite number to the file, 
+// and then close it.
+
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main() {
+
+	FILE *file = fopen("best.txt", "w");
+
+	if (file) 
+	{
+		fprintf(file, "%d", 6);
+		fclose(file);
+	}
+
+	return 0;
+}
+
+
+
+
+
