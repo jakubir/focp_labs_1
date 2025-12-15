@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <time.h>
 
-#include <fstream>
-
 //1. Write a function that takes a file name and returns its size on disk.If the file cannot be opened, the function should return zero.Suggested function prototype :
 unsigned long long GetFileSize(char* file_name)
 {
@@ -91,7 +89,6 @@ bool truncate_file(const char* filename)
 //characters of the key are used for subsequent bytes of the encrypted file.
 //When the key reaches the end, it is reused.Decryption requires repeating
 //these operations with the same key.Verify the program's operation.
-
 bool encrypt_file(const char* filename, const char* key)
 {
 	FILE* file = fopen(filename, "rb");
@@ -130,25 +127,6 @@ bool encrypt_file(const char* filename, const char* key)
 	return true;
 }
 
-//	6. Use C++ ifstream / ofstream(the fstream library) :
-//	This program should be run with the following command - line arguments :
-//numbers.txt result.txt result.bin
-//Open an existing text file with numbers(its name : first command - line argument) and :
-//	a) print all numbers to the screen,
-//	b) calculate mean and minimum of all read numbers,
-//	c) calculated values(mean and minimum) should be stored :
-//-as a text in a new file(its name : second command - line argument),
-//-as a memory block in a new file(its name : third command - line argument),
-//d) calculate and display the sizes of files created in c), hint: use ftell,
-//e) close all files.
-
-//7. Use C++ ifstream / ofstream(the fstream library) :
-	//Write a definition of a function copyFile that creates an exact copy of a source file.The names of the source and destination files are function parameters.The function should return true if the operation was successful, and false otherwise.Example function prototype :
-
-//bool copyFile(const char* source, const char* dest);
-
-//Call this function for some existing file(e.g.a JPG image) with the name of the destination file different, but with the same extension.Check the copied file e.g.by opening it in a browser.
-
 int main()
 {
 	char tmp[] = "test.txt";
@@ -167,12 +145,6 @@ int main()
 	copyFile(tmp, tmp2);
 
 	encrypt_file(tmp, "abcdef");
-
-
-	//5. Use C++ ifstream / ofstream(the fstream library) :
-	//	Open(create) a text file called “numbers.txt”.Write 100 random integers to that file.Close the file.
-
-	srand(time(NULL));
 
 	return 0;
 }

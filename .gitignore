@@ -1,0 +1,45 @@
+# Ignore compiled binaries and build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.ilk
+*.pdb
+*.dll
+
+# Visual Studio and MSBuild
+.vs/
+*.vcxproj.user
+*.user
+*.suo
+
+# Visual Studio build folders (common paths in this repo)
+**/x64/Debug/
+**/x64/Release/
+Debug/
+Release/
+bin/
+build/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.tmp
+*.log
+
+# Ignore plain file or executable named 'main'
+main
