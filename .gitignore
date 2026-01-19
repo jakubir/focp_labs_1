@@ -43,3 +43,4 @@ Thumbs.db
 
 # Ignore plain file or executable named 'main'
 main
+main.cpp
