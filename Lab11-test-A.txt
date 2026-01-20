@@ -1,0 +1,21 @@
+/* GROUP A
+
+Use C malloc/free to dynamically allocate memory for an array of 100 doubles. Then free the allocated memory.
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	double *arr = (double *)malloc(100 * sizeof(double));
+
+	if (*arr == NULL)
+		return 0;
+	
+	free(arr);
+
+	return 0;
+}
