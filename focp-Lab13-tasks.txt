@@ -1,0 +1,14 @@
+1. Write a function counting the number of words in a text passed as the argument to the function (the type of the argument should be char *). Assume, that a word is a sequence of characters without spaces, separated by one or more spaces. For example, the text "The quick    brown  fox  " contains four words.
+
+2. Write a function checking, whether one text is an anagram of another. For example, "silent" and "listen" are anagrams.
+
+3. There is a sentence: "Please bring me some tea and coffee". Create a copy of it with the word "and" replaced with "or". Use the following functions: strlen, strstr, strcpy (strncpy), strcat.
+
+4. There is a sentence: "Panda. Large black-and-white bear-like mammal, native to China. Eats, shoots and leaves.". Create a copy of it with the last comma removed. Use the following functions: strlen, strrchr, strcpy (strncpy).
+
+5. Write a program reading three words (up to 99 characters) and printing them in lexicographical order. Use function strcmp.
+
+6. Re-write the solutions of C-style strings tasks (tasks 1-5) to use C++ strings.
+
+
+
